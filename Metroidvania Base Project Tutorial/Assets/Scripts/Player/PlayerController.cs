@@ -34,13 +34,13 @@ public class PlayerController : MonoBehaviour
     }
 
     private void Walking() {
-        if (Input.GetKeyDown(KeyCode.D) && !CheckIfPlayerShouldStop(Vector2.right)) {
+        if (Input.GetKey(KeyCode.D) && !CheckIfPlayerShouldStop(Vector2.right)) {
             transform.position += transform.right * movementSpeed * Time.deltaTime;
             transform.rotation = Quaternion.Euler(0, 0, 0);
             playerDirection = 1;
             anim.SetBool("isWalking", true);
         }
-        else if (Input.GetKeyDown(KeyCode.A) && !CheckIfPlayerShouldStop(Vector2.left)) {
+        else if (Input.GetKey(KeyCode.A) && !CheckIfPlayerShouldStop(Vector2.left)) {
             transform.position += transform.right * movementSpeed * Time.deltaTime;
             transform.rotation = Quaternion.Euler(0, 180, 0);
             playerDirection = -1;
