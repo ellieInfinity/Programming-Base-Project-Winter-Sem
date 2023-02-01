@@ -403,11 +403,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 1.1
   jumpVelocity: 4
-  groundingCheckDistance: 0.75
+  groundingCheckDistance: 0.35
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
-  stoppingDistance: 0
+  stoppingDistance: 0.35
   wallLayer:
     serializedVersion: 2
     m_Bits: 0
