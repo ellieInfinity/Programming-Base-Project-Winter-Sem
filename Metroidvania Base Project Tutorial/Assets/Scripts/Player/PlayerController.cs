@@ -88,6 +88,12 @@ public class PlayerController : MonoBehaviour
         else return false;
     }
 
+    private void OnCollisionEnter2D(Collision2D other) {
+        if (other.collider.CompareTag("Enemy")) {
+            GetComponent<Player>().TakeDamage(2);
+        }
+    }
+
     private bool CheckIfPlayerShouldStop(Vector2 direction) {
         RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, stoppingDistance, wallLayer);
 
