@@ -3798,11 +3798,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6027660578056147979, guid: 9d156a718b9df6747821aefd1476f72f, type: 3}
   m_PrefabInstance: {fileID: 6027660577711159020}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &1481878482 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 6027660578056147975, guid: 9d156a718b9df6747821aefd1476f72f, type: 3}
-  m_PrefabInstance: {fileID: 6027660577711159020}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1481878484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3816,7 +3811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
-  anim: {fileID: 1481878482}
+  anim: {fileID: 0}
 --- !u!1 &1493707208
 GameObject:
   m_ObjectHideFlags: 0
