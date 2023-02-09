@@ -20,6 +20,7 @@ public class Player : MonoBehaviour
     public void TakeDamage(int damage) {
         health -= damage;
         anim.SetTrigger("Hurt");
+        anim.SetBool("isIdle", true);
     }
 
     public void Die() {

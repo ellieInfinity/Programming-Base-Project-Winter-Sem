@@ -15,5 +15,14 @@ public class Healthbar : MonoBehaviour
     private void Update() {
         float fillAmount = (float)player.GetHealth() / (float)maxHealth;
         mask.fillAmount = fillAmount;
+
+        if ((float)player.GetHealth() <= 5 && (float)player.GetHealth() > 2)
+        {
+            mask.color = Color.yellow;
+        }
+        if ((float)player.GetHealth() <= 2)
+        {
+            mask.color = Color.red;
+        }
     }
 }
