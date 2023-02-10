@@ -19,11 +19,6 @@ public class Octopus : Enemy
         }
     }
 
-    protected override void Attack()
-    {
-        
-    }
-
     protected override void Die()
     {
         base.Die();

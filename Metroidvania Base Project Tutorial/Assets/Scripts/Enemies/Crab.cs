@@ -19,10 +19,6 @@ public class Crab : Enemy
         }
     }
 
-    protected override void Attack()
-    {
-        
-    }
 
     protected override void Die()
     {
