@@ -549,7 +549,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.0986706, y: -0.15197478, z: -9.997514}
+  m_LocalPosition: {x: -0.6542263, y: -0.15186857, z: -9.997514}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 307603692}
@@ -3081,6 +3081,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6027660578056147979, guid: 9d156a718b9df6747821aefd1476f72f, type: 3}
   m_PrefabInstance: {fileID: 6027660577711159020}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1481878482 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6027660578056147975, guid: 9d156a718b9df6747821aefd1476f72f, type: 3}
+  m_PrefabInstance: {fileID: 6027660577711159020}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1481878484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3094,7 +3099,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
-  anim: {fileID: 0}
+  anim: {fileID: 1481878482}
 --- !u!1 &1493707208
 GameObject:
   m_ObjectHideFlags: 0
@@ -3899,6 +3904,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 392514918}
     m_Modifications:
+    - target: {fileID: 6027660578056147969, guid: 9d156a718b9df6747821aefd1476f72f, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 1481878482}
     - target: {fileID: 6027660578056147969, guid: 9d156a718b9df6747821aefd1476f72f, type: 3}
       propertyPath: jumpVelocity
       value: 3.75
