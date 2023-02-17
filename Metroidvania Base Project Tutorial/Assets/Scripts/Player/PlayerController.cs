@@ -56,6 +56,7 @@ public class PlayerController : MonoBehaviour
         var isGrounded = CheckIfGrounded();
 
         if (isGrounded && Input.GetKeyDown(KeyCode.Space)) {
+            FindObjectOfType<AudioManager>().Play("MarioJump");
             rb.AddForce(transform.up * jumpVelocity, ForceMode2D.Impulse);
             anim.SetBool("isJumping", true);
         }
