@@ -17,6 +17,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float stoppingDistance;
     [SerializeField] private LayerMask wallLayer;
 
+    [SerializeField] Player player;
+
     private Rigidbody2D rb;
     private float gravityScale;
     private int playerDirection;
@@ -104,5 +106,34 @@ public class PlayerController : MonoBehaviour
 
     public int ReturnPlayerDirection() {
         return playerDirection;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other) {
+        if (other.tag == "Item")
+        {
+            switch (other.GetComponent<Interactable>().GetInteractType())
+            {
+                // If the interactable is collectable
+                case InteractType.Health:
+                    {
+                        if (player.GetComponent<Player>().health <= 28)
+                        {
+                            player.GetComponent<Player>().SetHealth(2);
+                        }
+                        else
+                        {
+                           player.GetComponent<Player>().health = 28; 
+                        }
+                        Destroy(other.gameObject);
+                        break;
+                        
+                    }
+                case InteractType.Refill:
+                {
+                    //Don't have anything here yet
+                    break;
+                }
+            }
+        }
     }
 }
