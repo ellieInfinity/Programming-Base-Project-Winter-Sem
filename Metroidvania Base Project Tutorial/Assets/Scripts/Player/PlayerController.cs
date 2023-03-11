@@ -17,8 +17,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float stoppingDistance;
     [SerializeField] private LayerMask wallLayer;
 
-    [SerializeField] Player player = new Player();
+    [SerializeField] Player player;
 
+    private List<int> list = new List<int>();
     private Rigidbody2D rb;
     private float gravityScale;
     private int playerDirection;
