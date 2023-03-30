@@ -24,5 +24,9 @@ public class Healthbar : MonoBehaviour
         {
             mask.color = Color.red;
         }
+        if ((float)player.GetHealth() > 5)
+        {
+            mask.color = new Color(0f, 168f, 255f);
+        }
     }
 }

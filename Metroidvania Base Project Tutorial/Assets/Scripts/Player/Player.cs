@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] public int health = 28;
+    [SerializeField] int health = 28;
 
     public Animator anim;
 
@@ -40,6 +40,6 @@ public class Player : MonoBehaviour
 
     public void SetHealth (int newHealth)
     {
-        health += newHealth;
+        health = newHealth;
     }
 }

@@ -117,13 +117,13 @@ public class PlayerController : MonoBehaviour
                 // If the interactable is collectable
                 case InteractType.Health:
                     {
-                        if (player.GetComponent<Player>().health <= 28)
+                        if (player.GetComponent<Player>().GetHealth() <= 28)
                         {
                             player.GetComponent<Player>().SetHealth(2);
                         }
                         else
                         {
-                           player.GetComponent<Player>().health = 28; 
+                           player.GetComponent<Player>().SetHealth(20); 
                         }
                         Destroy(other.gameObject);
                         break;
