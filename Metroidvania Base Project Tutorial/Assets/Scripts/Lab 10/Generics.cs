@@ -22,10 +22,10 @@ public class Generics : MonoBehaviour
     }
 
     // We can use generics to have a single method which can accept any data type
-    public void DisplayElements<Thingy>(Thingy[] arr) 
+    public void DisplayElements<Type>(Type[] arr) 
     {
-        foreach (Thingy thing in arr) {
-            print(thing);
+        foreach (Type type in arr) {
+            print(type);
         }
     }
 }
